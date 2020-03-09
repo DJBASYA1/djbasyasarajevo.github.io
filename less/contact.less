@@ -1,0 +1,59 @@
+.contact {
+    padding: 80px 0 90px;
+    font-family: 'Open Sans';
+    .md(text-align, center);
+    .text {
+        text-align: center;
+        font-size: 18px;
+        color: @dBlue;
+        font-family: 'Lato';
+        margin-bottom: 70px;
+    }
+    
+    h4 {
+        margin-bottom: 30px;
+    }
+    .form-control {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 7px 0;
+        margin-bottom: 15px;
+        
+        &:focus {
+            box-shadow: 0 0 4px @blue;
+        }
+    }
+    
+    .send {
+        border: none;
+        background: none;
+        font-size: 13px;
+       text-align: right;
+        
+        .fa {
+            color: @blue;
+        }
+    }
+    .col-3 {
+        margin-left: auto;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .md(flex-direction, row);
+        .md(justify-content, space-around);
+        .md(margin-top, 15px);
+        .fa {
+            margin-bottom: 15px;
+            color: #cdd2d6;
+            &:hover {
+                color: @blue;
+            }
+            
+        }
+        
+    }
+}

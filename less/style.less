@@ -1,0 +1,75 @@
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blue {
+    color: @blue;
+}
+
+.burger {
+    background: transparent;
+    border: 2px solid @blue;
+    border-radius: 4px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: @white;
+    display: none;
+.md-block({
+    display: block;
+});
+}
+
+h3 {
+    font-family: 'Lato';
+    color: @blue;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.heart {
+    max-width: 235px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 90px;
+        height: 2px;
+        background: #d7dadc;
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 90px;
+        height: 2px;
+        background: #d7dadc;
+    }
+    
+}
+
+
+@import "./params/mix.less";
+@import "./params/var.less";
+@import "./header.less";
+@import "./mobile.less";
+@import "./features.less";
+@import "./works.less";
+@import "./team.less";
+@import "./facts.less";
+@import "./contact.less";
+
